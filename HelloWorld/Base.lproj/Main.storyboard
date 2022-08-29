@@ -24,6 +24,9 @@
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Show Text"/>
+                                <connections>
+                                    <action selector="makeButtonAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="LyO-AL-itg"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, World!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="U5q-MF-a5r">
                                 <rect key="frame" x="48.666666666666657" y="140" width="317" height="72"/>
@@ -42,6 +45,10 @@
                             <constraint firstItem="3vn-jr-949" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vyl-OD-1qV"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="helloWorldLabel" destination="U5q-MF-a5r" id="erD-Jl-k6Z"/>
+                        <outlet property="toggleButton" destination="3vn-jr-949" id="8hB-kr-0C6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
