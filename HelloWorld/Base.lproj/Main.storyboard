@@ -17,32 +17,62 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3vn-jr-949">
-                                <rect key="frame" x="134.66666666666666" y="710" width="144.99999999999997" height="48"/>
-                                <color key="backgroundColor" systemColor="systemYellowColor"/>
-                                <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Show Text"/>
-                                <connections>
-                                    <action selector="makeButtonAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="LyO-AL-itg"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, World!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="U5q-MF-a5r">
-                                <rect key="frame" x="48.666666666666657" y="140" width="317" height="72"/>
+                                <rect key="frame" x="48.666666666666657" y="140" width="317" height="71.666666666666686"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="60"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="cFS-UT-pTx">
+                                <rect key="frame" x="135" y="540" width="145" height="184"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bdl-5Z-Tjg">
+                                        <rect key="frame" x="0.0" y="0.0" width="145" height="48"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Show Text"/>
+                                        <connections>
+                                            <action selector="makeButtonAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="PD5-zJ-67W"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vmp-Df-Ohf">
+                                        <rect key="frame" x="0.0" y="68" width="145" height="48"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Show Text"/>
+                                        <connections>
+                                            <action selector="makeButtonAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="MMT-im-Q8b"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3vn-jr-949">
+                                        <rect key="frame" x="0.0" y="136" width="145" height="48"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Show Text"/>
+                                        <connections>
+                                            <action selector="makeButtonAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="LyO-AL-itg"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Vmp-Df-Ohf" secondAttribute="trailing" id="g69-gu-RmN"/>
+                                    <constraint firstItem="3vn-jr-949" firstAttribute="top" secondItem="Vmp-Df-Ohf" secondAttribute="bottom" constant="20" id="hE0-MA-HwU"/>
+                                    <constraint firstItem="Vmp-Df-Ohf" firstAttribute="leading" secondItem="cFS-UT-pTx" secondAttribute="leading" id="hR0-Qx-5vx"/>
+                                    <constraint firstItem="Vmp-Df-Ohf" firstAttribute="centerX" secondItem="cFS-UT-pTx" secondAttribute="centerX" id="l69-Dv-jI2"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="3vn-jr-949" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9FF-bT-Gsb"/>
                             <constraint firstItem="U5q-MF-a5r" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="96" id="RkE-i0-9B2"/>
                             <constraint firstItem="U5q-MF-a5r" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iKj-8r-X2h"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3vn-jr-949" secondAttribute="bottom" constant="104" id="uPL-mb-niz"/>
-                            <constraint firstItem="3vn-jr-949" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vyl-OD-1qV"/>
                         </constraints>
                     </view>
                     <connections>
